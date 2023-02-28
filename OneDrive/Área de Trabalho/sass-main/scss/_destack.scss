@@ -3,12 +3,18 @@
     padding: $space-default;
     h1 {
         color: $color-03;
-        float: left;
+        text-align: center;
+        float: center;
         font-size: $font-big;
         margin-top: 0;
     }
+    h1:hover {
+        color: $color-02;
+    }
     h2 {
-        float: left;
+        border-bottom: 2px solid rgba(255,255,255,0.5);
+        text-align: center;
+        float: center;
         font-size: $font-small;
         margin-left: $space-default;
         margin-top: $mt;
@@ -17,10 +23,12 @@
         width: 100%;
         height: auto;
         margin: $space-default auto;
+        border: 3px solid rgba(255,255,255,0.5);
+        backdrop-filter: blur(15px);
     }
     p {
         font-size: $font-normal;
-        color: $color-01;
+        color: $color-03;
         padding: 2rem 0;
         width: 100%;
     }
