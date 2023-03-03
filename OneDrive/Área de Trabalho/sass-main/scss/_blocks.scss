@@ -1,14 +1,14 @@
 .blocks {
-
+    margin-bottom: 30px;
     padding: 3rem 0;
 
-    h2 {
-        color: $color-01;
+    &__tittle {
+        color: $color-03;
         text-align: center;
         
     }
 
-    ul {
+    &__list {
         list-style-type: none;
         font-size: $font-small;
         display: flex;
@@ -18,42 +18,43 @@
         width: 100%;
     }
 
-    li {
+    &__inter {
         color: $color-02;
         display: block;
         margin: $space-default auto;
         width: 30%;
+
+    }
         
-        .img-container {
-            display: block;
-            height: 200px;
-            overflow: hidden;
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        .img-container:hover img {
-            transform: scale(0.9);
-            transition: 0.8s all;
-            object-fit: contain;
-            border-radius: 10px;
-        }
-
-        a {
-            background-color: $color-01;
-            border-radius: 5px;
-            color: white;
-            display: block;
-            font-size: $font-medium;
-            margin: $mt-02 auto $mb;
-            padding: 4px 8px;
-            text-align: center;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: blueviolet;
-        }
+    &__image {
+        display: block;
+        height: 200px;
+        overflow: hidden;
+        width: 100%;
+        border-radius: 10px;
+        
     }
 
+    &__image:hover img {
+        transform: scale(0.9);
+        transition: 0.8s all;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+
+    &__subtittle {
+        background-color: $color-01;
+        border-radius: 5px;
+        color: white;
+        display: block;
+        font-size: $font-medium;
+        margin: $mt-02 auto $mb;
+        padding: 4px 8px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    &__subtittle:hover {
+        color: blueviolet;
+    }
 }

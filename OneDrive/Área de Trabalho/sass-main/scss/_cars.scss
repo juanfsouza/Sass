@@ -1,8 +1,19 @@
+@mixin theme($theme: $color-01, $bg: $color-04) {
+    border: 1px solid $theme;
+    background-color: #000000;
+}
+
+
+
 .cars {
     h2 {
         color: $color-02;
     }
+    .destack {
+        @include theme;
+    }
     li {
+        @include theme($theme: $color-default, $bg: $bg-color);
         color: $color-04;
 
         a {
