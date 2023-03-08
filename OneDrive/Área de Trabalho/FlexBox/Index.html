@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Tutorial</title>
+    
+        <style>
+
+            *{
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+            }
+
+            h1 {
+                color: dodgerblue;
+            }
+
+            h2 {
+                display: flex;
+                align-items: start;
+                justify-content: start;
+            }
+
+
+            p {
+                color: rgb(255, 0, 0);
+                margin-top: 20px;
+            }
+
+            .container-1 {
+                display: flex;
+                margin: 20px;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .container-2 {
+                display: flex;
+                flex-direction: column;
+                margin: 20px;
+                align-items: left;
+                justify-content: left;
+            }
+
+            .container-3 {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin: 20px;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .container-4 {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin: 20px;
+                align-items: center;
+                justify-content: flex-start;
+            }
+
+            .container-5 {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin: 20px;
+                align-items: center;
+                justify-content: flex-end;
+            }
+
+            .container-6 {
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                justify-content: flex-end;
+            }
+
+            .container-7 {
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
+
+            .container-8 {
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .container-9 {
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .container-10 {
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+
+            .col-1 {
+                padding: 20px;
+                background-color: rgb(238, 238, 238);
+                border-bottom: 3px solid black;
+                border-top: 3px solid black;
+            }
+            
+            .col-2 {
+                padding: 20px;
+                background-color: rgb(46, 46, 46);
+                
+            }
+
+            .col-3 {
+                padding: 0px;
+                padding-bottom: 200px;
+                background-color: rgb(238, 238, 238);
+                border: 2px solid black;
+                
+            }
+
+            .col-4 {
+                padding: 0px;
+                padding-top: 200px;
+                background-color: rgb(46, 46, 46);
+                border: 2px solid rgb(255, 255, 255);
+                
+            }
+
+            .child {
+                width: 20%;
+                height: 200px;
+                background-color: brown;
+                border-radius: 5px;
+                border: 1px solid black;
+            }
+
+            .child-3 {
+                width: 40%;
+                height: 200px;
+                background-color: brown;
+                border-radius: 5px;
+                border: 1px solid black;
+            }
+
+            section {
+                background-color: rgb(46, 46, 46);
+                padding: 200px;
+            }
+            
+            section h2 {
+                text-align: center;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                letter-spacing: 5px;
+                color: dodgerblue;
+            }
+
+            footer {
+                background-color: rgb(46, 46, 46);
+                padding: 200px;
+            }
+
+
+        </style>
+</head>
+
+<body>
+
+<section>
+    <h2>FLEXBOX TUTORIAL</h2>
+
+</section>
+<div class="col-1">   
+    <h1>FLEX</h1>
+    <div class="container-1">
+
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+
+    </div>
+    <p>display: flex;<p>
+</div>  
+<div class="col-2">
+    <h1>COLLUN</h1>
+    <div class="container-2">
+
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+    <p>flex-direction: column;</p>
+</div>
+
+<div class="col-1">
+    <h1>Flex-Wrap</h1>
+    <div class="container-3">
+
+        <div class="child-3"></div>
+        <div class="child-3"></div>
+        <div class="child-3"></div>
+        <div class="child-3"></div>
+
+    </div>
+        <p>flex-direction: row;</p>
+        <p>flex-wrap: wrap;</p>
+</div>
+
+<div class="col-2">   
+    <h1>ALING ITEM</h1>
+    <div class="container-1">
+
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+
+    </div>
+    <p>align-items: center;</p>
+    <p>justify-content: center;</p>
+</div>
+
+<div class="col-1">   
+    <h1>JUSTIFY FLEX-END</h1>
+    <div class="container-4">
+
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+
+    </div>
+    <p>align-items: center;</p>
+    <p>justify-content: flex-end;</p>
+</div>
+
+<div class="col-2">   
+    <h1>JUSTIFY FLEX-START</h1>
+    <div class="container-5">
+
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+
+    </div>
+    <p>align-items: center;</p>
+    <p>justify-content: flex-start;</p>
+</div>
+<div class="col-1"> 
+        <h1>ALING FLEX-START</h1>
+    <div class="col-3">   
+        <div class="container-6">
+
+            <div class="child"></div>
+
+        </div>
+    </div>
+    <p>align-items: flex-start;</p>
+    <p>justify-content: flex-start;</p>
+</div>
+
+<div class="col-2"> 
+    <h1>ALING FLEX-END</h1>
+    <div class="col-4">   
+        <div class="container-7">
+
+            <div class="child"></div>
+
+        </div>
+    </div>
+    <p>align-items: flex-end;</p>
+    <p>justify-content: flex-end;</p>
+</div>
+
+<div class="col-1">   
+    <h1>JUSTIFY SPACE-AROUND</h1>
+    <div class="container-8">
+
+        <div class="child"></div>
+        <div class="child"></div>
+
+    </div>
+    <p>justify-content: space-around;</p>
+</div>
+
+<div class="col-2">   
+    <h1>JUSTIFY SPACE-BETWEEN</h1>
+    <div class="container-9">
+
+        <div class="child"></div>
+        <div class="child"></div>
+
+    </div>
+    <p>justify-content: space-between;</p>
+</div>
+
+<div class="col-1">   
+    <h1>JUSTIFY SPACE-EVENLY</h1>
+    <div class="container-10">
+
+        <div class="child"></div>
+        <div class="child"></div>
+
+    </div>
+    <p>justify-content: space-evenly;</p>
+</div>
+<footer>
+    <div class="container">
+        <p> &copy; Desenvolvido por Juan.</p>
+    </div>
+</footer>
+    <script src="./js/anime.min.js"></script>
+    <script>
+        var animation = anime.timeline({});
+       
+        anime({
+            targets: '.container-1',
+            translateX: {
+                value: 0,
+                duration: 800
+            },
+            rotate: {
+                value: 360,
+                duration: 1800,
+                easing: 'easeInOutSine'
+            },
+            scale: {
+                value: 1,
+                duration: 1600,
+                delay: 800,
+                easing: 'easeInOutQuart'
+            },
+            delay: 250 // All properties except 'scale' inherit 250ms delay
+            });
+
+            anime({
+                targets: '.container-2',
+                translateX: 725
+            });
+
+            anime({
+                targets: '.container-3',
+                translateX: 3,
+                easing: 'easeInElastic(1, .6)'
+                });         
+
+                anime({
+                targets: '.container-7',
+                translateX: 1485,
+                easing: 'easeOutElastic(1, .6)'
+                });
+
+                anime({
+                targets: '.container-6',
+                translateX: -1485,
+                easing: 'easeInOutElastic(1, .6)'
+                });
+
+                anime({
+                targets: '.container-5',
+                translateX: -350,
+                easing: 'easeOutInElastic(1, .6)'
+                });
+
+                anime({
+                targets: '.container-4',
+                translateX: 350,
+                easing: 'easeOutInElastic(1, .6)'
+            });
+
+            anime({
+                targets: 'h2',
+                translateX: 1000,
+                direction: 'alternate',
+                loop: true,
+                easing: 'steps(3)'
+            })
+
+    </script>
+</body>
+</html>
